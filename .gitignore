@@ -99,6 +99,3 @@ ENV/
 
 # mkdocs documentation
 /site
-
-# static file
-/staticfiles
