@@ -1,4 +1,4 @@
-django==2.2.6
+django>=2.0.0
 gunicorn
 django-heroku
 whitenoise
