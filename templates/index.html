@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="div-center text-center">
+        <div class="container">
+            <a href="/" class="lang-logo">
+                <img src="/static/lang-logo.png">
+            </a>
+            <h2>Deploy python django to Heroku</h2>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h3><span class="glyphicon glyphicon-info-sign"></span>1.Heroku CLI INSTALL AND LOGIN</h3>
+                <ul>
+                    <li><a href="https://devcenter.heroku.com/articles/heroku-cli">down load Heroku CLI</a>
+                    </li>
+                    <li>LOGIN：$ <code>heroku login -i</code>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h3><span class="glyphicon glyphicon-folder-open "></span>2.Running Locally</h3>
+                <ul>
+                    <li>$ <code>git clone https://github.com/mo891916/start-heroku.git</code></li>
+                    <li>$ <code>cd start-heroku</code></li>
+                    <li>$ <code>pip3 install -r requirements.txt</code></li>
+                    <li>$ <code>python3 manage.py migrate</code></li>
+                    <li>$ <code>python3 manage.py collectstatic</code></li>
+                    <li>$ <code>heroku local web --port 8000</code></li>
+                    <li>Your app should now be running on (<a href="http://localhost:8000/">http://localhost:8000/</a>).
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h3><span class="glyphicon glyphicon-resize-small"></span>3.Deploying to Heroku</h3>
+                <ul>
+                    <li>$ <code>heroku create</code></li>
+                    <li>$ <code>git push heroku master</code></li>
+                    <li>$ <code>heroku run python manage.py migrate</code></li>
+                    <li>$ <code>heroku run python manage.py createsuperuser</code></li>
+                    <li>$ <code>heroku open</code></li>
+                </ul>
+            </div>
+        </div> <!-- row -->
+        <div class="alert alert-info text-center" role="alert">
+            <p><a href="https://dashboard.heroku.com/apps">heroku apps</a></p>
+            <p><a href="https://data.heroku.com/">heroku database</a></p>
+            <p><a href="https://devcenter.heroku.com/articles/deploying-python">heroku dev center</a></p>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block nav %}
+    <li>
+        <a href="/"><span class="glyphicon glyphicon-home"></span> Home</a>
+    </li>
+    <li class="active">
+        <a href="/db"><span class="glyphicon glyphicon-search"></span> db</a>
+    </li>
+{% endblock %}
+{% block content %}
+    <div class="container">
+        <h2>Page View Report</h2>
+        <ul>
+            {% for greeting in greetings %}
+                <li>{{ greeting.my_time }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}
