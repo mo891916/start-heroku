@@ -40,7 +40,9 @@ $ heroku open
 ### 4、 heroku.com
 
 1、 [manage heroku app](https://dashboard.heroku.com/apps)
+
 2、 [manage heroku database](https://data.heroku.com/)
+
 3、 [Official dev center](https://devcenter.heroku.com/articles/deploying-python)
 
 ## heroku dev center
