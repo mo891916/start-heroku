@@ -37,11 +37,11 @@ $ heroku run python manage.py createsuperuser
 $ heroku open
 ```
 
-### 4、 
+### 4、 heroku.com
 
-[manage heroku app](https://dashboard.heroku.com/apps)
-[manage heroku database](https://data.heroku.com/)
-[Official dev center](https://devcenter.heroku.com/articles/deploying-python)
+1、 [manage heroku app](https://dashboard.heroku.com/apps)
+2、 [manage heroku database](https://data.heroku.com/)
+3、 [Official dev center](https://devcenter.heroku.com/articles/deploying-python)
 
 ## heroku dev center
 
